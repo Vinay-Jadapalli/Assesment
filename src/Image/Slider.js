@@ -8,7 +8,7 @@ const handleOnDragStart = e => e.preventDefault();
 function Slider() {
   return (
     <div className="slider">
-      <AliceCarousel>
+      <AliceCarousel className="class">
         <div>
           <img
             src="http://placekitten.com/200/300"
@@ -17,12 +17,7 @@ function Slider() {
             alt="/"
           />
         </div>
-        <img
-          src="http://placekitten.com/200/400"
-          onDragStart={handleOnDragStart}
-          className="yours-custom-class"
-          alt="/"
-        />
+        
         <img
           src="http://placekitten.com/200/304"
           onDragStart={handleOnDragStart}
